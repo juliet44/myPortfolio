@@ -1,17 +1,17 @@
 body{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+    font-family: Arial, Helvetica, sans-serif;       
 }
-#brand{
-    
+
+
+#brand{    
     font-weight: bold;
     margin-top: -15px;
     font-size: 50px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#brand span{
+ span{
     color: darkorange;
 }
 #navbarTop a{  
@@ -29,6 +29,8 @@ body,
 header,
 #home{
     height: 100%;
+     max-width: 100%;
+    overflow-x: hidden;
 }
 
 #home{       
@@ -42,14 +44,16 @@ header,
 
 #intro{
     height: 300px;
-    width: 500px;
+    width: 450px;
     margin-top: 200px;
     padding: 25px;   
     border-radius: 3px; 
     color: rgb(3, 3, 78);
 }
 
-.container {
+
+
+#intro{
     display: flex;
     justify-content: center;
     background-color: ghostwhite;
@@ -59,11 +63,129 @@ header,
         font-weight: bold;
   }
   hr{
-      width: 200px;
-      color: rgb(3, 3, 78);
-      font-weight: bold;
+      width: 200px;      
   }
 
+  #about{
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+
+ h1{       
+    font-weight: bold;
+    font-size:5vw;       
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  @media screen and (min-width: 601px) {
+    h1 {
+      font-size: 70px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    h1 {
+      font-size: 30px;
+    }
+  } 
 
 
+#icons i{
+  color: rgb(73, 72, 72);
 
+}
+
+#resume{
+    padding: 50px;       
+}
+
+
+#frame img{
+        border-radius: 50%;
+        border: 2px solid darkgrey;
+        
+}
+#resume div{
+        margin-top:  30px;
+      }
+
+#frame button{    
+    outline: none;
+    display: block;
+    margin-top: 15px;
+    max-width: 100%;
+    width: 400px;   
+    background-color: rgb(228, 222, 222);
+    border:none ;
+    text-align: left;
+    font-weight: bold;
+    font-size: 19px;
+    padding: 20px;
+}
+#frame button:hover{
+    background-color: #ff8c00;
+    transition-duration: 0.25s;
+}
+#frame button:active{
+  background-color: #ff8c00;
+  
+}
+
+.tabContent {
+  display: none;
+  padding: 6px 12px;
+  
+}
+
+#test{
+  background: #262626;
+  padding: 50px 0;
+  position: relative;
+  margin: 120px 0;
+}
+
+.image-area{
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image-area img{
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-caption{
+  position: static;
+  padding-bottom: 15px;
+  padding-top: 0px;
+}
+
+.carousel-caption h3{
+  font-size: 26px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+.carousel-caption h4{
+  color: #ff8c00;
+}
+
+.carousel-caption p{
+  font-size: 18px;
+  margin:auto;
+  width: 70%;
+  margin-bottom: 10px;
+}
+
+.carousel-indicators{
+  bottom: -35px;
+}
+
+.carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+}
