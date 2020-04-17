@@ -1,0 +1,30 @@
+.message{
+    border: 1px solid lightslategray;
+    border-radius: 5px;
+    
+}
+.message form{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+.titleform{
+    background-image: linear-gradient(to right, rgb(247, 243, 239) , #f2f2f2 );
+    border-bottom:1px solid lightslategray;
+    padding: 20px;
+    color: rgb(92, 94, 95);
+}
+
+.button{
+    margin: auto;
+    padding: 8px;
+    background-color: darkorange;
+    width: 150px;
+    border: 1px solid thistle;
+    border-radius: 5px;
+    outline: none;
+    display: block;
+}
+.button:hover{
+    background-color: lightgrey;
+}

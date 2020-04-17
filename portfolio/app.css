@@ -1,22 +1,30 @@
-body{
+*{
     padding: 0px;
-    margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;       
+    margin: 0px;  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;  
+    line-height: 1.6;     
 }
-
-
-#brand{    
+/* 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+.padding{
+  padding: 70px 0px;
+}
+#brand{
+  color: #f2f2f2;    
     font-weight: bold;
     margin-top: -15px;
     font-size: 50px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
  span{
     color: darkorange;
 }
+
+.navbar{
+  background-color:rgba(0, 0, 0, 0.9);
+}
 #navbarTop a{  
     font-size: 15px;
-    color: rgb(53, 48, 48);         
+    color: rgb(240, 232, 232);          
 }
 #navbarTop a:hover, .active{  
     color:darkorange;   
@@ -24,13 +32,51 @@ body{
    
 }
 
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: rgb(212, 212, 212);
+	display: block;
+	transition: all 0.3s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
 html,
 body,
-header,
-#home{
-    height: 100%;
-     max-width: 100%;
-    overflow-x: hidden;
+#home{    
+   max-width: 100%;
+  overflow-x: hidden;       
 }
 
 #home{       
@@ -40,6 +86,7 @@ header,
     -o-background-size: cover;
     background-size: cover;
     padding: 20px;
+    height: 100vh;
 }
 
 #intro{
@@ -66,47 +113,29 @@ header,
       width: 200px;      
   }
 
-  #about{
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
  h1{       
     font-weight: bold;
-    font-size:5vw;       
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:400%;       
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  @media screen and (min-width: 601px) {
-    h1 {
-      font-size: 70px;
-    }
+@media(max-width: 768px){
+  h1{
+    font-size:300% ;
   }
-  
-  @media screen and (max-width: 600px) {
-    h1 {
-      font-size: 30px;
-    }
-  } 
-
+}
 
 #icons i{
   color: rgb(73, 72, 72);
 
 }
-
-#resume{
-    padding: 50px;       
-}
-
-
 #frame img{
         border-radius: 50%;
         border: 2px solid darkgrey;
         
 }
 #resume div{
-        margin-top:  30px;
+        margin-top:  10px;
       }
 
 #frame button{    
@@ -137,55 +166,29 @@ header,
   
 }
 
-#test{
-  background: #262626;
-  padding: 50px 0;
-  position: relative;
-  margin: 120px 0;
+#headerContact{
+  margin-bottom: 100px;
 }
 
-.image-area{
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  overflow: hidden;
+.hcontact{
+  text-align: center;
 }
 
-.image-area img{
-  width: 100%;
-  height: 100%;
+
+#footer{
+  background-color:rgba(0, 0, 0, 0.9);
+  padding: 10px;  
+  font-size: 12px;
+  font-weight:600;
+  color: #f2f2f2;
 }
 
-.carousel-caption{
-  position: static;
-  padding-bottom: 15px;
-  padding-top: 0px;
+#footer a{
+  text-decoration: underline;
+  color: #f2f2f2;
 }
 
-.carousel-caption h3{
-  font-size: 26px;
-  margin-bottom: 15px;
-  margin-top: 25px;
-}
-.carousel-caption h4{
+#footer a:hover{
   color: #ff8c00;
-}
-
-.carousel-caption p{
-  font-size: 18px;
-  margin:auto;
-  width: 70%;
-  margin-bottom: 10px;
-}
-
-.carousel-indicators{
-  bottom: -35px;
-}
-
-.carousel-indicators li {
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
+  text-decoration: none;
 }
