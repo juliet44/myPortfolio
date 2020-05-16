@@ -1,3 +1,15 @@
+#headerContact{
+    margin-bottom: 50px;
+  }
+  
+  .hcontact{
+    text-align: center;
+  }
+
+  .error {
+    color: red;
+    font-size: 90%;
+}
 .message{
     border: 1px solid lightslategray;
     border-radius: 5px;
@@ -18,13 +30,14 @@
 .button{
     margin: auto;
     padding: 8px;
+    color: #f2f2f2;
     background-color: darkorange;
     width: 150px;
-    border: 1px solid thistle;
+    border: none;
     border-radius: 5px;
     outline: none;
     display: block;
 }
 .button:hover{
-    background-color: lightgrey;
+    background-color: rgb(14, 2, 2);
 }

@@ -1,16 +1,39 @@
+/* back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 40px;
+  height:40px;
+  z-index: 9999;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.2s ease-out;
+  background-image: url(images/up1.png);
+ }
+ 
+ .back-to-top:hover{
+  opacity: 0.5;
+ }
+
+/* end of back to top */
+
+/* //skills section */
 @keyframes anim1{
     from {
-      transform: translateY(-100px);      
+      transform: translateY(80px);  
+      opacity: 0;
     }
     to  {
-      transform: translateY(0);     
+      transform: translateY(0); 
+      opacity: 1;    
     }
   }
 
 
   @keyframes anim2{
     from {
-      transform: translateY(-100px);
+      transform: translateY(90px);
       opacity: 0;
     }
     to  {
@@ -18,4 +41,16 @@
       opacity: 1;
     }
   }
-  
+
+
+.from-right{
+    transform: translateX(50%);
+}
+.from-right{
+ transition:opacity 250ms ease-in, transform 400ms ease-in;  
+  opacity: 0;
+}
+.from-right.appear{
+ transform: translateX(0);
+  opacity: 1;
+}
