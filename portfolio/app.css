@@ -20,7 +20,8 @@
 }
 
 .navbar{
-  background-color:rgba(0, 0, 0, 0.9);
+  background-color:rgba(0, 0, 0, 0.8);
+  /* background-color:rgba(0, 0, 0, 0.7) ; */
 }
 #navbarTop a{  
     font-size: 15px;
@@ -120,6 +121,15 @@ body,
   h1{
     font-size:300% ;
   }
+}
+
+.aboutContent{
+    text-align: center;
+}
+#about a{
+text-decoration: none;
+color: #ff8c00;
+font-weight: bold;
 }
 
 #icons i{

@@ -4,53 +4,113 @@
   bottom: 30px;
   right: 30px;
   width: 40px;
-  height:40px;
+  height: 40px;
   z-index: 9999;
   cursor: pointer;
   text-decoration: none;
   transition: opacity 0.2s ease-out;
   background-image: url(images/up1.png);
- }
- 
- .back-to-top:hover{
+}
+
+.back-to-top:hover {
   opacity: 0.5;
- }
+}
 
 /* end of back to top */
 
 /* //skills section */
-@keyframes anim1{
-    from {
-      transform: translateY(80px);  
-      opacity: 0;
-    }
-    to  {
-      transform: translateY(0); 
-      opacity: 1;    
-    }
+@keyframes anim1 {
+  from {
+    transform: translateY(80px);
+    opacity: 0;
   }
-
-
-  @keyframes anim2{
-    from {
-      transform: translateY(90px);
-      opacity: 0;
-    }
-    to  {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-
-
-.from-right{
-    transform: translateX(50%);
 }
-.from-right{
- transition:opacity 250ms ease-in, transform 400ms ease-in;  
+
+@keyframes anim2 {
+  from {
+    transform: translateY(90px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+.from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
   opacity: 0;
 }
-.from-right.appear{
- transform: translateX(0);
+.from-right.appear {
+  transform: translateX(0);
   opacity: 1;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 900%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #ff8c00;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #ff8c00;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-inner {
+  0% {
+    height: 0%;
+  }
+  25% {
+    height: 0%;
+  }
+  50% {
+    height: 100%;
+  }
+  75% {
+    height: 100%;
+  }
+  100% {
+    height: 0%;
+  }
 }
